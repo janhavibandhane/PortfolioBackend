@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb://localhost:27017/BackendPortfolio", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
